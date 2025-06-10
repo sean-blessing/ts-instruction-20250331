@@ -1,0 +1,11 @@
+{
+  "name": "01-node-demos",
+  "version": "1.0.0",
+  "description": "Sean's demo of npm init and the metadata prompts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
