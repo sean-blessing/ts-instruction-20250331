@@ -10,9 +10,11 @@ let friends: Friend[] = [
     new Friend("Julie Bowen", 49, "julie@bowen.com", true)
 ];
 
-console.log("Name\t\tAge\tEmail\t\t\tBFF");
+// determine column lengths: Name (25), Age(5), Email(30), BFF - none
+let header: string = "Name".padEnd(25)+"Age".padEnd(5)+"Email".padEnd(30)+"BFF";
+console.log(header);
 for (let friend of friends) {
-    let line: string = `${friend.name}\t${friend.age}\t${friend.email}\t\t\t`;
+    let line: string = friend.name.padEnd(25)+friend.age.toString().padEnd(5)+friend.email.padEnd(30);
     line += (friend.bff) ? "Yes" : "No";
     console.log(line);
 }
